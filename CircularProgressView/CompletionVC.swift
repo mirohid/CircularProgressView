@@ -6,14 +6,28 @@
 //
 
 import UIKit
-
+import Lottie
 class CompletionVC: UIViewController {
 
+    
+    @IBOutlet weak var animationView: UIView!
+    private var lottieAnimation: LottieAnimationView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      
+        setupLottieAnimation()
     }
+    
+    private func setupLottieAnimation() {
+           lottieAnimation = LottieAnimationView(name: "Jyi1arwFeR")
+           lottieAnimation.contentMode = .scaleAspectFit
+           lottieAnimation.loopMode = .loop
+           lottieAnimation.play()
 
+           animationView.addSubview(lottieAnimation)
 
+           // Make the animation view fit inside animationView (since constraints are set in Storyboard)
+           lottieAnimation.frame = animationView.bounds
+           lottieAnimation.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+       }
 }

@@ -78,7 +78,7 @@ class ViewController: UIViewController {
         setupKeyboardDismissGesture()
     }
 
-    @IBAction func btnClicked(_ sender: UIButton) {
+    @IBAction func btnClicked(_ sender: UIButton) {                          
         if let text = progressTxtField.text, let doubleValue = Double(text) {
                 let value = CGFloat(doubleValue)
                 progressView.setProgress(to: value, animated: true)

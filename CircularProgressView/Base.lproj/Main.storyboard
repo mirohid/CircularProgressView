@@ -139,13 +139,14 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Congrats" translatesAutoresizingMaskIntoConstraints="NO" id="Zz5-Y5-DTk">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="766"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="IFX-O4-Q3x">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oqe-OY-jYv">
                                                 <rect key="frame" x="96" y="0.0" width="201" height="201"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="201" id="9Vj-WO-bXY"/>
-                                                    <constraint firstAttribute="width" constant="201" id="TiF-d5-Ihh"/>
+                                                    <constraint firstAttribute="width" constant="201" id="9qa-X7-Y5V"/>
+                                                    <constraint firstAttribute="height" constant="201" id="rub-61-A1A"/>
                                                 </constraints>
-                                            </imageView>
+                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations Emma!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zv5-3y-l97">
                                                 <rect key="frame" x="32" y="217" width="329" height="33.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
@@ -309,18 +310,17 @@
                                             <constraint firstAttribute="bottom" secondItem="Zz5-Y5-DTk" secondAttribute="bottom" id="4nT-iZ-Nxb"/>
                                             <constraint firstItem="Vy2-EU-CbD" firstAttribute="leading" secondItem="3NC-da-D9q" secondAttribute="leading" constant="32" id="5w7-8J-ksO"/>
                                             <constraint firstItem="zv5-3y-l97" firstAttribute="leading" secondItem="3NC-da-D9q" secondAttribute="leading" constant="32" id="HTj-jJ-eD2"/>
-                                            <constraint firstItem="IFX-O4-Q3x" firstAttribute="leading" secondItem="3NC-da-D9q" secondAttribute="leading" constant="96" id="L64-5g-lLD"/>
                                             <constraint firstAttribute="trailing" secondItem="vgI-q2-DDj" secondAttribute="trailing" constant="35" id="P69-HH-e6F"/>
                                             <constraint firstItem="XoY-Af-QaN" firstAttribute="top" secondItem="Vy2-EU-CbD" secondAttribute="bottom" constant="12" id="RmZ-Lk-808"/>
                                             <constraint firstAttribute="trailing" secondItem="Zz5-Y5-DTk" secondAttribute="trailing" id="TGo-TB-jPU"/>
+                                            <constraint firstItem="Oqe-OY-jYv" firstAttribute="top" secondItem="3NC-da-D9q" secondAttribute="top" id="Vwi-oc-o25"/>
                                             <constraint firstItem="vgI-q2-DDj" firstAttribute="top" secondItem="ej2-nM-vOS" secondAttribute="bottom" constant="12" id="XxH-3Z-I1H"/>
+                                            <constraint firstItem="zv5-3y-l97" firstAttribute="top" secondItem="Oqe-OY-jYv" secondAttribute="bottom" constant="16" id="ZFZ-8O-00W"/>
                                             <constraint firstAttribute="trailing" secondItem="ej2-nM-vOS" secondAttribute="trailing" constant="35" id="ZxS-ez-n9N"/>
                                             <constraint firstAttribute="trailing" secondItem="zv5-3y-l97" secondAttribute="trailing" constant="32" id="a9q-ct-pfo"/>
                                             <constraint firstItem="Zz5-Y5-DTk" firstAttribute="top" secondItem="3NC-da-D9q" secondAttribute="top" id="cHg-4R-17n"/>
                                             <constraint firstAttribute="trailing" secondItem="Vy2-EU-CbD" secondAttribute="trailing" constant="32" id="e5c-pP-L8k"/>
                                             <constraint firstAttribute="trailing" secondItem="qlm-WJ-m1D" secondAttribute="trailing" constant="35" id="e9Z-lp-q4w"/>
-                                            <constraint firstItem="zv5-3y-l97" firstAttribute="top" secondItem="IFX-O4-Q3x" secondAttribute="bottom" constant="16" id="eO2-ab-23O"/>
-                                            <constraint firstItem="IFX-O4-Q3x" firstAttribute="top" secondItem="3NC-da-D9q" secondAttribute="top" id="eXK-Fe-6Qd"/>
                                             <constraint firstItem="qlm-WJ-m1D" firstAttribute="leading" secondItem="3NC-da-D9q" secondAttribute="leading" constant="35" id="ftt-UL-Mab"/>
                                             <constraint firstItem="ej2-nM-vOS" firstAttribute="top" secondItem="qlm-WJ-m1D" secondAttribute="bottom" constant="12" id="gu9-KR-KE1"/>
                                             <constraint firstAttribute="trailing" secondItem="XoY-Af-QaN" secondAttribute="trailing" constant="35" id="oMO-3a-z8U"/>
@@ -328,8 +328,8 @@
                                             <constraint firstItem="ej2-nM-vOS" firstAttribute="leading" secondItem="3NC-da-D9q" secondAttribute="leading" constant="35" id="tTd-Sz-8ar"/>
                                             <constraint firstItem="Zz5-Y5-DTk" firstAttribute="leading" secondItem="3NC-da-D9q" secondAttribute="leading" id="u1K-MY-xmW"/>
                                             <constraint firstItem="Vy2-EU-CbD" firstAttribute="top" secondItem="zv5-3y-l97" secondAttribute="bottom" constant="4" id="u3S-zH-FLd"/>
+                                            <constraint firstItem="Oqe-OY-jYv" firstAttribute="leading" secondItem="3NC-da-D9q" secondAttribute="leading" constant="96" id="uya-US-FIV"/>
                                             <constraint firstItem="vgI-q2-DDj" firstAttribute="leading" secondItem="3NC-da-D9q" secondAttribute="leading" constant="35" id="vRg-gZ-1Kn"/>
-                                            <constraint firstAttribute="trailing" secondItem="IFX-O4-Q3x" secondAttribute="trailing" constant="96" id="xBB-Hv-Vmy"/>
                                             <constraint firstItem="XoY-Af-QaN" firstAttribute="leading" secondItem="3NC-da-D9q" secondAttribute="leading" constant="35" id="xo3-3O-GG8"/>
                                         </constraints>
                                     </view>
@@ -362,10 +362,13 @@
                             <constraint firstItem="wqa-dG-oiF" firstAttribute="trailing" secondItem="XaQ-jL-9G0" secondAttribute="trailing" id="wOy-FL-9jl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationView" destination="Oqe-OY-jYv" id="t9n-B4-lLQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4T-3U-w9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031" y="17"/>
+            <point key="canvasLocation" x="1029.7709923664122" y="16.901408450704228"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="z0y-5C-vgf">
@@ -388,7 +391,6 @@
     </scenes>
     <resources>
         <image name="Congrats" width="374" height="769"/>
-        <image name="img1" width="200" height="200"/>
         <image name="img2" width="39" height="35"/>
         <image name="img3" width="38" height="37"/>
         <image name="img4" width="38" height="39"/>
