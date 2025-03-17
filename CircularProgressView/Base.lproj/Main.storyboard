@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -109,6 +110,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Congrats" translatesAutoresizingMaskIntoConstraints="NO" id="wqa-dG-oiF">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" name="colo1"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="403-wI-Fge">
                                 <rect key="frame" x="35" y="721" width="323" height="50"/>
@@ -188,7 +190,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" name="colo1"/>
                                                 <constraints>
                                                     <constraint firstItem="nIU-Rr-glH" firstAttribute="top" secondItem="XoY-Af-QaN" secondAttribute="top" constant="38" id="A14-vW-Uhk"/>
                                                     <constraint firstItem="i0h-ip-qQu" firstAttribute="leading" secondItem="VCD-MS-b0A" secondAttribute="trailing" constant="20" id="HgX-3X-bjw"/>
@@ -227,7 +229,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" name="colo1"/>
                                                 <constraints>
                                                     <constraint firstItem="4X7-wP-cVG" firstAttribute="top" secondItem="Sum-Pj-F2y" secondAttribute="bottom" constant="5" id="0DA-Of-4Rn"/>
                                                     <constraint firstAttribute="bottom" secondItem="Rhw-KN-pIB" secondAttribute="bottom" constant="20" id="54p-8C-tQk"/>
@@ -260,7 +262,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" name="colo1"/>
                                                 <constraints>
                                                     <constraint firstItem="MsC-KB-IWA" firstAttribute="leading" secondItem="HJz-7r-lHS" secondAttribute="trailing" constant="20" id="Bnl-d8-diM"/>
                                                     <constraint firstItem="HJz-7r-lHS" firstAttribute="top" secondItem="ej2-nM-vOS" secondAttribute="top" constant="20" id="NiY-7h-Gc8"/>
@@ -291,7 +293,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" name="colo1"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="1HI-Ov-jEd"/>
                                                     <constraint firstItem="p5F-EL-LhK" firstAttribute="leading" secondItem="vgI-q2-DDj" secondAttribute="leading" constant="20" id="XA8-aj-XPq"/>
@@ -368,7 +370,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4T-3U-w9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029.7709923664122" y="16.901408450704228"/>
+            <point key="canvasLocation" x="1118" y="17"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="z0y-5C-vgf">
@@ -395,6 +397,9 @@
         <image name="img3" width="38" height="37"/>
         <image name="img4" width="38" height="39"/>
         <image name="img5" width="38" height="37"/>
+        <namedColor name="colo1">
+            <color red="0.99999994039535522" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

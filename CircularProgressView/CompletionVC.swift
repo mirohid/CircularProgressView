@@ -8,19 +8,18 @@
 import UIKit
 import Lottie
 class CompletionVC: UIViewController {
-
-    
+   
     @IBOutlet weak var animationView: UIView!
     private var lottieAnimation: LottieAnimationView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLottieAnimation()
     }
     
     private func setupLottieAnimation() {
-           lottieAnimation = LottieAnimationView(name: "Jyi1arwFeR")
-           lottieAnimation.contentMode = .scaleAspectFit
+           lottieAnimation = LottieAnimationView(name: "CompletionAnimation")
+           lottieAnimation.contentMode = .scaleAspectFill
            lottieAnimation.loopMode = .loop
            lottieAnimation.play()
 
