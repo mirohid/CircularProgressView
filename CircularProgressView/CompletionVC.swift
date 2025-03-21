@@ -18,7 +18,7 @@ class CompletionVC: UIViewController {
     }
     
     private func setupLottieAnimation() {
-           lottieAnimation = LottieAnimationView(name: "CompletionAnimation")
+           lottieAnimation = LottieAnimationView(name: "highFiveAnimation")
            lottieAnimation.contentMode = .scaleAspectFill
            lottieAnimation.loopMode = .loop
            lottieAnimation.play()
