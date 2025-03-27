@@ -78,6 +78,7 @@ class CircularProgressView: UIView {
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineWidth = 10
         shapeLayer.strokeEnd = 0
+        shapeLayer.lineCap = .round
         
         // Gradient Layer
         gradientLayer.frame = bounds
@@ -85,6 +86,7 @@ class CircularProgressView: UIView {
                                 UIColor(red: 187/255, green: 242/255, blue: 70/255, alpha: 1).cgColor]
         gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
         gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
+        gradientLayer.cornerRadius = radius
         gradientLayer.mask = shapeLayer
         
         layer.addSublayer(gradientLayer)
