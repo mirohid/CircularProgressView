@@ -22,37 +22,75 @@ class CircularProgressView: UIView {
         setupView()
     }
     
+//    private func setupView() {
+//        let circlePath = UIBezierPath(arcCenter: CGPoint(x: bounds.width / 2, y: bounds.height / 2),
+//                                      radius: bounds.width / 4, // Slightly larger radius
+//                                      startAngle: -CGFloat.pi / 2,
+//                                      endAngle: 3 * CGFloat.pi / 2,
+//                                      clockwise: true)
+//        
+//        // Background Circle
+//        backgroundLayer.path = circlePath.cgPath
+//        backgroundLayer.strokeColor = UIColor.systemGray5.cgColor
+//        backgroundLayer.fillColor = UIColor.clear.cgColor
+//        backgroundLayer.lineWidth = 10 // Increased width
+//        backgroundLayer.strokeEnd = 1
+//        layer.addSublayer(backgroundLayer)
+//        
+//        // Progress Circle
+//        shapeLayer.path = circlePath.cgPath
+//        shapeLayer.strokeColor = UIColor.white.cgColor
+//        shapeLayer.fillColor = UIColor.clear.cgColor
+//        shapeLayer.lineWidth = 10 // Increased width
+//        shapeLayer.strokeEnd = 0 // Initially empty
+//        
+//        gradientLayer.frame = bounds
+//        gradientLayer.colors = [UIColor(red: 64/255, green: 242/255, blue: 199/255, alpha: 1).cgColor,
+//                                       UIColor(red: 187/255, green: 242/255, blue: 70/255, alpha: 1).cgColor]
+//        gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
+//        gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
+//        gradientLayer.mask = shapeLayer
+//        
+//        layer.addSublayer(gradientLayer)
+//    }
+    
     private func setupView() {
-        let circlePath = UIBezierPath(arcCenter: CGPoint(x: bounds.width / 2, y: bounds.height / 2),
-                                      radius: bounds.width / 4, // Slightly larger radius
+        let radius = min(bounds.width, bounds.height) / 2  // Make it fit the full view
+        let center = CGPoint(x: bounds.width / 2, y: bounds.height / 2)
+        
+        let circlePath = UIBezierPath(arcCenter: center,
+                                      radius: radius - 5, // Adjust for stroke width
                                       startAngle: -CGFloat.pi / 2,
                                       endAngle: 3 * CGFloat.pi / 2,
                                       clockwise: true)
-        
+
         // Background Circle
         backgroundLayer.path = circlePath.cgPath
         backgroundLayer.strokeColor = UIColor.systemGray5.cgColor
         backgroundLayer.fillColor = UIColor.clear.cgColor
-        backgroundLayer.lineWidth = 20 // Increased width
+        backgroundLayer.lineWidth = 10
         backgroundLayer.strokeEnd = 1
         layer.addSublayer(backgroundLayer)
-        
+
         // Progress Circle
         shapeLayer.path = circlePath.cgPath
         shapeLayer.strokeColor = UIColor.white.cgColor
         shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.lineWidth = 20 // Increased width
-        shapeLayer.strokeEnd = 0 // Initially empty
+        shapeLayer.lineWidth = 10
+        shapeLayer.strokeEnd = 0
         
+        // Gradient Layer
         gradientLayer.frame = bounds
         gradientLayer.colors = [UIColor(red: 64/255, green: 242/255, blue: 199/255, alpha: 1).cgColor,
-                                       UIColor(red: 187/255, green: 242/255, blue: 70/255, alpha: 1).cgColor]
+                                UIColor(red: 187/255, green: 242/255, blue: 70/255, alpha: 1).cgColor]
         gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
         gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
         gradientLayer.mask = shapeLayer
         
         layer.addSublayer(gradientLayer)
     }
+
+    
     
     func setProgress(to value: CGFloat, animated: Bool) {
         let clampedValue = min(max(value / 100, 0), 1)
